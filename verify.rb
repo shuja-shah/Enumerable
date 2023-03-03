@@ -1,7 +1,9 @@
 require_relative 'enumerable'
 
 class List
+  @list = []
   include Enumberable
+
   def initialize(list)
     @list = list
   end
