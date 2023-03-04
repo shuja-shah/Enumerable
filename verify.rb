@@ -4,12 +4,16 @@ class List
   @list = []
   include Enumberable
 
-  def initialize(list)
+  def initialize(*list)
     @list = list
   end
 
   def each(&block)
-    @list.each(&block)
+    counter = 0
+    while counter < @list.length
+      block.call(@list[counter])
+      counter += 1
+    end
   end
 end
 
