@@ -8,11 +8,8 @@ class List
     @list = list
   end
 
-  def each(&list)
-    @list.each do |i|
-      yield i
-    end
-
+  def each(&block)
+    @list.each(&block)
   end
 end
 
@@ -22,4 +19,3 @@ list = List.new([1, 2, 3, 4, 5])
 list.all? { |i| i < 6 } # => true
 list.any? { |i| i < 2 } # => true
 list.filter { |i| i < 3 } # => [1,2]
-list.each { |i| i } # => [1,2,3,4,5]
