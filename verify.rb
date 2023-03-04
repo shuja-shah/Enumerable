@@ -4,12 +4,15 @@ class List
   @list = []
   include Enumberable
 
-  def initialize(list)
+  def initialize(*list)
     @list = list
   end
 
   def each(&list)
-    @list.each(&list)
+    @list.each do |i|
+      yield i
+    end
+
   end
 end
 
