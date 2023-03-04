@@ -16,6 +16,6 @@ end
 ## TESTS
 
 list = List.new([1, 2, 3, 4, 5])
-puts list.all? { |i| i < 6 } # => true
-puts list.any? { |i| i < 2 } # => true
-puts list.filter { |i| i < 3 } # => [1,2]
+list.all? { |i| i < 6 } # => true
+list.any? { |i| i < 2 } # => true
+list.filter { |i| i < 3 } # => [1,2]
