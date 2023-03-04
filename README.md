@@ -1,11 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -14,20 +8,14 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -41,6 +29,17 @@
 ### [Ruby](https://www.ruby-lang.org/en/) <a name="tech-stack"></a>
 
 > A high-level, interpreted programming language known for its elegant syntax, object-oriented programming features, and dynamic typing.
+
+### Key Features <a name="key-features"></a>
+
+- **#all? method**<br>
+Passes each element of the collection to the given block. The method returns true if the block never returns false or nil.
+- **#any? method**<br>
+Passes each element of the collection to the given block. The method returns true if the block ever returns a value other than false or nil.
+- **#filter method**<br>
+Returns an array containing all elements of enum for which the given block returns a true value.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -80,6 +79,15 @@ Run <code>git clone https://github.com/shuja-shah/Enumerable.git</code>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **#chunk method**<br>Enumerates over the items, chunking them together based on the return value of the block.
+- **#collect method**<br>Returns a new array with the results of running block once for every element in enum.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -113,4 +121,3 @@ Hat tip to anyone whose code was used.
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
